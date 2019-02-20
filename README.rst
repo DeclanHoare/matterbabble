@@ -3,7 +3,7 @@ Matterbabble
 ============
 
 Matterbabble is an API client for Discourse_ and Matterbridge_.  It
-mirrors Discourse posts in a thread to Matterbridge messages on a
+mirrors Discourse posts in a topic to Matterbridge messages on a
 gateway, and vice versa.  It works well with the `Discourse Babble`_
 plugin, which formats a thread as a chat room.
 
@@ -53,8 +53,8 @@ discourse
 
 The ``discourse`` section must contain an address and API key for a
 Discourse forum, and the username of the user you want the client to run
-as.  You can also change the format used for the messages going TO
-Discourse (the ``fmt`` key is optional).
+as.  You can also change the format used for messages going to Discourse
+(the ``fmt`` key is optional).
 
 matterbridge
 ~~~~~~~~~~~~
@@ -67,7 +67,7 @@ connections
 ~~~~~~~~~~~
 
 The ``connections`` section maps Matterbridge gateways to Discourse
-threads.  The ID of a thread is the last component of the URL after you
+topics.  The ID of a topic is the last component of the URL after you
 navigate to it on Discourse, and the correct format is ``/topics/{id}``.
 You can find a Babble chat room's ID by clicking on it in the admin
 chat manager.  The format for those is ``/babble/topics/{id}``.

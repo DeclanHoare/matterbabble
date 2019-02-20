@@ -6,7 +6,7 @@ with open("README.rst", "r") as f:
 setup(name = "matterbabble",
 	packages = ["matterbabble"],
 	entry_points = {"console_scripts": ["matterbabble = matterbabble.__main__:main"]},
-	version = "1.0.0",
+	version = "1.0.0.post1",
 	description = "Connect Discourse threads to Matterbridge.",
 	long_description = long_description,
 	author = "Declan Hoare",
