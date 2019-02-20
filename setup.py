@@ -11,5 +11,8 @@ setup(name = "matterbabble",
 	long_description = long_description,
 	author = "Declan Hoare",
 	author_email = "declanhoare@exemail.com.au",
-	url = "https://github.com/DeclanHoare/matterbabble")
+	url = "https://github.com/DeclanHoare/matterbabble",
+	classifiers = ("Programming Language :: Python :: 3",
+		"License :: OSI Approved :: Apache Software License",
+		"Operating System :: OS Independent"))
 
