@@ -6,7 +6,7 @@ with open("README.rst", "r") as f:
 setup(name = "matterbabble",
 	packages = ["matterbabble"],
 	entry_points = {"console_scripts": ["matterbabble = matterbabble.__main__:main"]},
-	version = "1.0.0.post1",
+	version = "1.0.1",
 	description = "Connect Discourse threads to Matterbridge.",
 	long_description = long_description,
 	author = "Declan Hoare",
@@ -14,5 +14,6 @@ setup(name = "matterbabble",
 	url = "https://github.com/DeclanHoare/matterbabble",
 	classifiers = ("Programming Language :: Python :: 3",
 		"License :: OSI Approved :: Apache Software License",
-		"Operating System :: OS Independent"))
+		"Operating System :: OS Independent"),
+	install_requires = ["aiohttp", "bidict", "commonmark", "commonmarkextensions"])
 
